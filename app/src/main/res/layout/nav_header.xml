@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/nav_root"
+    android:background="#F57C00">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:layout_margin="5dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Sindhura"
+        app:layout_constraintStart_toEndOf="@+id/senderImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sindhura"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:layout_margin="5dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="sindhura088@gmail.com"
+        app:layout_constraintStart_toEndOf="@id/senderImage"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        />
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="70dp"
+    android:layout_height="80dp"
+    android:id="@+id/senderImage"
+    android:cropToPadding="true"
+    android:layout_margin="10dp"
+    android:src="@drawable/ic_android_black_24dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
